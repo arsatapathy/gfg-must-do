@@ -5,6 +5,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Set;
 
+//Given a Binary Tree, print Left view of it. Left view of a Binary Tree is set of nodes visible when tree is visited from Left side. The task is to complete the function leftView(), which accepts root of the tree as argument.
 public class LeftViewTree {
     public static ArrayList<Integer> leftView(Node root) {
         ArrayList<Integer> list = new ArrayList<>();
