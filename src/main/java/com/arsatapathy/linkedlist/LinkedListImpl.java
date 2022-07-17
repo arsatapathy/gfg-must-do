@@ -6,14 +6,15 @@ import java.util.List;
 // Given a linked list of N nodes. The task is to reverse this list.
 public class LinkedListImpl {
     public Node reverse(Node head) {
+        Node current = head;
         Node previous = null;
         Node next = null;
 
-        while (head != null) {
-            next = head.next;
-            head.next = previous;
-            previous = head;
-            head = next;
+        while (current != null) {
+            next = current.next;
+            current.next = previous;
+            previous = current;
+            current = next;
         }
 
         return previous;
