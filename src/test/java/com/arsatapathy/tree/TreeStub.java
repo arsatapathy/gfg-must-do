@@ -3,6 +3,17 @@ package com.arsatapathy.tree;
 import org.junit.Before;
 
 public abstract class TreeStub {
+    /*
+
+          1
+        /   \
+       2     3
+      / \   / \
+     4   5  6  7
+      \
+       8
+
+     */
     protected Node one = new Node(1);
     protected Node two = new Node(2);
     protected Node three = new Node(3);
