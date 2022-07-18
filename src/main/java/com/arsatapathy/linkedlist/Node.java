@@ -1,11 +1,10 @@
 package com.arsatapathy.linkedlist;
 
-public class Node {
-    public String data;
-    public Node next;
+public class Node<T> {
+    public T data;
+    public Node<T> next;
 
-    public Node (String data) {
+    public Node(T data) {
         this.data = data;
     }
-
 }

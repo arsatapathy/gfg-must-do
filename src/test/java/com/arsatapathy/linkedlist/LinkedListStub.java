@@ -3,10 +3,10 @@ package com.arsatapathy.linkedlist;
 import org.junit.Before;
 
 public abstract class LinkedListStub {
-    protected Node a = new Node("A");
-    protected Node b = new Node("B");
-    protected Node c = new Node("C");
-    protected Node d = new Node("D");
+    protected Node<String> a = new Node("A");
+    protected Node<String> b = new Node("B");
+    protected Node<String> c = new Node("C");
+    protected Node<String> d = new Node("D");
 
     @Before
     public void init() {

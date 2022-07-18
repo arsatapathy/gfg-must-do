@@ -4,11 +4,11 @@ import java.util.LinkedList;
 import java.util.List;
 
 // Given a linked list of N nodes. The task is to reverse this list.
-public class LinkedListImpl {
-    public Node reverse(Node head) {
-        Node current = head;
-        Node previous = null;
-        Node next = null;
+public class MyLinkedListImpl implements MyLinkedList<String> {
+    public Node<String> reverse(Node<String> head) {
+        Node<String> current = head;
+        Node<String> previous = null;
+        Node<String> next = null;
 
         while (current != null) {
             next = current.next;
@@ -20,9 +20,9 @@ public class LinkedListImpl {
         return previous;
     }
 
-    public List<Node> traverse(Node head) {
-        List<Node> list = new LinkedList<>();
-        Node current = head;
+    public List<Node<String>> traverse(Node<String> head) {
+        List<Node<String>> list = new LinkedList<>();
+        Node<String> current = head;
 
         while (current != null) {
             list.add(current);

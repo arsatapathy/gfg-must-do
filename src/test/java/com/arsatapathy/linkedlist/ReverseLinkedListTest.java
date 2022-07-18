@@ -9,8 +9,8 @@ public class ReverseLinkedListTest extends LinkedListStub {
 
     @Test
     public void test_01() {
-        LinkedListImpl impl = new LinkedListImpl();
+        MyLinkedList<String> myLinkedList = new MyLinkedListImpl();
 
-        Assert.assertEquals(List.of(d, c, b, a), impl.traverse(impl.reverse(a)));
+        Assert.assertEquals(List.of(d, c, b, a), myLinkedList.traverse(myLinkedList.reverse(a)));
     }
 }
