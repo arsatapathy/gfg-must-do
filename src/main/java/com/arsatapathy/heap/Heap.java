@@ -2,7 +2,7 @@ package com.arsatapathy.heap;
 
 import java.util.Arrays;
 
-public abstract class Heap<T> {
+public abstract class Heap<T extends Number> {
     int capacity;
     int size = 0;
     T[] items;
