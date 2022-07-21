@@ -12,24 +12,23 @@ public class BFS implements Graph {
     public void traverse(ArrayList<ArrayList<Integer>> adj, int start, Set<Integer> visited) {
         Queue<Integer> queue = new LinkedList<>();
 
-        if (!visited.contains(start)) {
-            queue.add(start);
+        queue.add(start);
 
-            while (!queue.isEmpty()) {
-                Integer current = queue.remove();
+        while (!queue.isEmpty()) {
+            Integer current = queue.remove();
 
-                if (!visited.contains(current)) {
+            if (!visited.contains(current)) {
 
-                    System.out.println(current);
+                System.out.println(current);
 
-                    visited.add(current);
+                visited.add(current);
 
-                    for (Integer neighbour : adj.get(current)) {
-                        queue.add(neighbour);
-                    }
+                for (Integer neighbour : adj.get(current)) {
+                    queue.add(neighbour);
                 }
             }
         }
+
 
     }
 
