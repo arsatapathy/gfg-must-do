@@ -14,18 +14,18 @@ public class BFS implements Graph {
 
         if (!visited.contains(start)) {
             queue.add(start);
-            visited.add(start);
-
 
             while (!queue.isEmpty()) {
                 Integer current = queue.remove();
 
-                System.out.println(current);
+                if (!visited.contains(current)) {
 
-                for (Integer neighbour : adj.get(current)) {
-                    if (!visited.contains(neighbour)) {
+                    System.out.println(current);
+
+                    visited.add(current);
+
+                    for (Integer neighbour : adj.get(current)) {
                         queue.add(neighbour);
-                        visited.add(neighbour);
                     }
                 }
             }
